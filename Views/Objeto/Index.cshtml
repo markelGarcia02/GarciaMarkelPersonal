@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model IEnumerable<GarciaMarkelPersonal.Models.clases_atomicas.Objeto>
+@foreach (var item in Model)
+{
+	<table>
+		<tr>
+			<td>
+				@Html.DisplayFor(modelItem => item.Precio)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.Titulo)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.Descripcion)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.Foto)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.IdObjeto)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.IdUser)
+			</td>
+
+			<td>
+				@Html.ActionLink("Edit", "Edit", new { id=item.Precio }) |
+				@Html.ActionLink("Details", "Details", new { id=item.Titulo })  |
+				@Html.ActionLink("Delete", "Delete", new { id=item.Descripcion })
+				@Html.ActionLink("Edit", "Edit", new { id=item.Foto }) |
+				@Html.ActionLink("Details", "Details", new { id=item.IdObjeto })  |
+				@Html.ActionLink("Delete", "Delete", new { id=item.IdUser })
+			</td>
+		</tr>
+	</table>
+}
