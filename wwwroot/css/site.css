@@ -20,3 +20,14 @@ html {
 body {
   margin-bottom: 60px;
 }
+table {
+    border: 2;
+    table-layout: fixed;
+    width: 280px;
+}
+
+th, td {
+    border: 2px solid black;
+    width: 120px;
+    word-wrap: break-word;
+}
