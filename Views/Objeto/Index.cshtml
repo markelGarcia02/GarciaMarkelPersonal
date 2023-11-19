@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Objetos";
 }
 
 @model IEnumerable<GarciaMarkelPersonal.Models.clases_atomicas.Objeto>
@@ -24,15 +24,6 @@
 			</td>
 			<td>
 				@Html.DisplayFor(modelItem => item.IdUser)
-			</td>
-
-			<td>
-				@Html.ActionLink("Edit", "Edit", new { id=item.Precio }) |
-				@Html.ActionLink("Details", "Details", new { id=item.Titulo })  |
-				@Html.ActionLink("Delete", "Delete", new { id=item.Descripcion })
-				@Html.ActionLink("Edit", "Edit", new { id=item.Foto }) |
-				@Html.ActionLink("Details", "Details", new { id=item.IdObjeto })  |
-				@Html.ActionLink("Delete", "Delete", new { id=item.IdUser })
 			</td>
 		</tr>
 	</table>
